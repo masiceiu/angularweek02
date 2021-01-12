@@ -1,4 +1,4 @@
-<main role="container">
+<main class="container">
   <div class="page-header px-3 py-3 mx-auto text-center">
     <h1 class="display-4"> Angular Bootcamp Jan-2021</h1>
     <p class="lead">In this Angular Bootcamp January 2021, we are going to
@@ -8,14 +8,8 @@
     </p>
   </div>
   <div class="card-deck">
-    <div class="card shadow-sm mb-4">
-      <app-card [data]="cardList[0]"></app-card>
-    </div>
-    <div class="card shadow-sm mb-4">
-      <app-card [data]="cardList[1]"></app-card>
-    </div>
-    <div class="card shadow-sm mb-4">
-      <app-card [data]="cardList[2]"></app-card>
+    <div class="card shadow-sm mb-4" *ngFor="let card of cardList">
+      <app-card [data]="card"></app-card>
     </div>
   </div>
 </main>

@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     allCard.push({
       title: 'HTML-CSS',
       count: 3,
-      frequent: 'Week',
+      frequent: 'Monthly',
       body: 'There will be minimum 3 assignment for html-css so that we can be good in html-css coding.',
     });
     return allCard;
