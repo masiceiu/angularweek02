@@ -7,6 +7,7 @@ import {Card} from '../../shared/interfaces';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public cardList: Card[] = [];
   public htmlData: Card = {
     title: 'HTML-CSS',
     count: 3,
@@ -25,9 +26,8 @@ export class HomeComponent implements OnInit {
     frequent: 'Week',
     body: 'We will have assignment per week for Angular. This assignment must be done before next week. Any help will be provide by Microsoft teams/class room.',
   };
-  cards: Card[];
   constructor() {
-    this.cards = [
+    this.cardList = [
       this.htmlData,
       this.jsData,
       this.angularData
